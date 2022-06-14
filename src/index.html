@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
 
     <!-- icon for android (after having added manifest folder -->
-    <link rel="manifest" href="manifest.webmanifest" />
+    <!-- <link rel="manifest" href="manifest.webmanifest" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,7 +34,7 @@
       src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
 
-    <script defer src="js/script.js"></script>
+    <script defer src="script.js"></script>
 
     <title>Omnifood &mdash; Never cook again!</title>
   </head>
@@ -567,7 +567,13 @@
                 first meal is on us!
               </p>
 
-              <form class="cta-form" name="sign-up" netlify>
+              <form
+                action="SUBMIT"
+                data-netlify="true"
+                class="cta-form"
+                name="sign-up"
+                netlify
+              >
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
@@ -587,6 +593,9 @@
                     name="email"
                     required
                   />
+                </div>
+                <div class="field">
+                  <div data-netlify-recapture="true"></div>
                 </div>
 
                 <div>
