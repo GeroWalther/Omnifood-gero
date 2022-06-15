@@ -507,7 +507,7 @@
 
 .cta-form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
   column-gap: 3.2rem;
   row-gap: 2.4rem;
 }
@@ -517,6 +517,14 @@
   font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 1.2rem;
+}
+.cta-form textarea {
+  padding: 3rem;
+  width: 100%;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 1.8rem;
+  color: inherit;
 }
 .cta-form input,
 .cta-form select {
@@ -530,7 +538,8 @@
   border-radius: 9px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
-.cta-form input::placeholder {
+.cta-form input::placeholder,
+.cta-form textarea::placeholder {
   color: #aaa;
 }
 

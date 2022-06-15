@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
 
     <!-- icon for android (after having added manifest folder -->
-    <!-- <link rel="manifest" href="manifest.webmanifest" /> -->
+    <link rel="manifest" href="manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -594,9 +594,6 @@
                     required
                   />
                 </div>
-                <div class="field">
-                  <div data-netlify-recaptcha="true"></div>
-                </div>
 
                 <div>
                   <!-- <input type="checkbox" />
@@ -610,6 +607,20 @@
                     <option value="facebook">Facebook Ad</option>
                     <option value="others">Others</option>
                   </select>
+                </div>
+                <div>
+                  <textarea
+                    class="textarea"
+                    name="message"
+                    id="message"
+                    rows="9"
+                    placeholder="Your message"
+                  ></textarea>
+                  <label for="message"></label>
+                </div>
+
+                <div>
+                  <div data-netlify-recaptcha="true"></div>
                 </div>
 
                 <button class="btn btn--form">Sign up now</button>
